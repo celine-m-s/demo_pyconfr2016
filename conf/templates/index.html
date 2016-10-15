@@ -9,6 +9,8 @@
 
       <h1>Conférencier(s)</h1>
 
+      <a href="{% url 'add_speaker' %}"><button>+</button></a>
+
       {% for speaker in speakers %}
 
         <h2>{{ speaker.name }}</h2>

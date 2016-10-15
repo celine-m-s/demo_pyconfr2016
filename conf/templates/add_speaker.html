@@ -9,6 +9,8 @@
 
       <h1>Ajouter un Conférencier</h1>
 
+      <a href="{% url 'index' %}"><button>Retour</button></a>
+
       <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
