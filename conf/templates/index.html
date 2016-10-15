@@ -14,7 +14,7 @@
 
       {% for speaker in speakers %}
 
-        <h2>{{ speaker.name }}</h2>
+        <h2>{{ speaker.name }} <a href="{% url 'update_speaker' speaker.pk %}"><button>modifier</button></a></h2>
 
         <p><b>Présentation(s) :</b><br />
 

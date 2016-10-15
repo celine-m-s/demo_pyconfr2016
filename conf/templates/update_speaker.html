@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conférencier</title>
+  </head>
+
+  <body>
+
+      <h1>{{ speaker.name }}</h1>
+
+      <a href="{% url 'index' %}"><button>Retour</button></a>
+
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Valider</button>
+      </form>
+
+  </body>
+</html>
