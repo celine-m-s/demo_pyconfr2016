@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Speakers</title>
+  </head>
+
+  <body>
+
+      <h1>Conférencier(s)</h1>
+
+      {% for speaker in speakers %}
+
+        <h2>{{ speaker.name }}</h2>
+
+        <p><b>Présentation(s) :</b><br />
+
+        {% for talk in speaker.talk_set.all %}
+          - {{ talk.title }} : {{ talk.content }}<br />
+        {% endfor %}
+
+        <p>
+
+      {% endfor %}
+
+  </body>
+</html>
