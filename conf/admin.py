@@ -1,5 +1,6 @@
 from django.contrib import admin
 
+# import from current repository
 from .models import Speaker, Talk
 
 
